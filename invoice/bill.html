@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GST Invoice</title>
+    <link rel="stylesheet" href="assest/css/invoice.css">
+</head>
+<body onload="loadInvoice()">
+
+<div class="invoice">
+
+<table class="header">
+<tr>
+    <td rowspan="2" class="logo"><img src="assest/image/logo.png"></td>
+    <td class="company">SHRI PARAMHANS ELECTRICAL AND ELECTRONICS</td>
+</tr>
+<tr>
+    <td class="address">Shiv Market, Near City Petrol Pump, Dinangar-143531</td>
+</tr>
+</table>
+
+<table>
+<tr>
+    <td><b>GSTIN:</b>03AKSPK5807H1Z1 </td>
+    <td><b>Location:</b> Punjab</td>
+</tr>
+</table>
+
+<h3 class="center">TAX INVOICE</h3>
+
+<table>
+<tr>
+<td>
+<b>Customer Name:</b> <span id="cname"></span><br>
+<b>Address:</b> <span id="caddress"></span>
+</td>
+<td>
+<b>Date:</b> <span id="date"></span><br>
+<b>Customer GSTIN:</b> <span id="cgst"></span>
+</td>
+</tr>
+</table>
+
+<table id="billTable">
+<tr>
+<th>Sr</th>
+<th>Description</th>
+<th>HSN</th>
+<th>Rate</th>
+<th>Qty</th>
+<th>Taxable</th>
+<th>GST%</th>
+<th>Amount</th>
+</tr>
+</table>
+
+<table class="summary">
+<tr>
+<td class="remarks">Remarks</td>
+<td>
+<table>
+<tr><td>Taxable Amount</td><td id="taxable"></td></tr>
+<tr><td id="cgstLabel"></td><td id="cgstAmt"></td></tr>
+<tr><td id="sgstLabel"></td><td id="sgstAmt"></td></tr>
+<tr><td id="igstLabel"></td><td id="igstAmt"></td></tr>
+<tr><th>Total</th><th id="total"></th></tr>
+
+</table>
+
+<table class="sign">
+<tr>
+<td>Accountant Signature</td>
+<td>Customer Signature</td>
+</tr>
+</table>
+
+<p class="center"><b>Thank You. Visit Again.</b></p>
+
+<button onclick="window.print()">Print Invoice</button>
+
+</div>
+
+<script src="assest/js/invoice.js"></script>
+</body>
+</html>
+v

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GST Bill Entry</title>
+    <link rel="stylesheet" href="assest/css/entry.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>GST BILL ENTRY</h2>
+
+    <div class="grid">
+        <input id="customerName" placeholder="Customer Name">
+        <input id="customerGST" placeholder="Customer GSTIN">
+        <input id="address" placeholder="Customer Address">
+        <input id="state" placeholder="Customer State (e.g. Punjab)">
+        <input id="billDate" type="date" placeholder="Bill Date">
+    </div>
+
+    <h3>Add Item</h3>
+
+    <div class="grid">
+        <input id="product" placeholder="Product Name">
+        <input id="hsn" placeholder="HSN">
+        <input id="rate" type="number" placeholder="Rate">
+        <input id="qty" type="number" placeholder="Quantity">
+        <input id="gst" type="number" placeholder="GST %">
+    </div>
+
+    <button onclick="addItem()">➕ Add Item</button>
+
+    <table id="itemTable">
+        <tr>
+            <th>Product</th>
+            <th>HSN</th>
+            <th>Rate</th>
+            <th>Qty</th>
+            <th>GST%</th>
+            <th>Taxable</th>
+            <th>Delete</th>
+        </tr>
+    </table>
+
+    <button class="generate" onclick="generateInvoice()">Generate Invoice</button>
+</div>
+
+<script src="assest/js/entry.js"></script>
+</body>
+</html>

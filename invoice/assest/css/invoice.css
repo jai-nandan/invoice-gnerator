@@ -1,0 +1,49 @@
+body {
+    font-family: Arial;
+    background: #eee;
+}
+
+.invoice {
+    width: 900px;
+    margin: auto;
+    background: white;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: 13px;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.company {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.address {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.remarks {
+    height: 100px;
+}
+
+.sign td {
+    height: 80px;
+    text-align: center;
+}
