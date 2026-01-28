@@ -1,68 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial;
-    background: #f4f6f8;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #000);
+    color: #00fff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    width: 900px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    margin-top: 30px;
-    box-shadow: 0 0 10px gray;
+    width: 95%;
+    max-width: 1100px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 0 25px #00fff0;
 }
 
 h2, h3 {
     text-align: center;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #00fff0;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-bottom: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
 }
 
 input {
-    padding: 8px;
-    border: 1px solid #aaa;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #00fff0;
+    color: #00fff0;
+    border-radius: 8px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #66fff5;
 }
 
 button {
-    padding: 10px;
-    background: #0a4b78;
-    color: white;
+    margin-top: 15px;
+    padding: 12px;
+    background: linear-gradient(90deg, #00fff0, #00b3ff);
     border: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 30px;
     cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #00fff0;
 }
 
-button.delete-btn {
-    background: #e74c3c;
-    border: none;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button.delete-btn:hover {
-    background: #c0392b;
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #00fff0;
 }
 
 .generate {
     width: 100%;
-    font-size: 16px;
-    margin-top: 15px;
+    font-size: 18px;
 }
 
 table {
     width: 100%;
+    margin-top: 20px;
     border-collapse: collapse;
-    margin-top: 15px;
 }
 
 th, td {
-    border: 1px solid black;
-    padding: 5px;
+    border: 1px solid #00fff0;
+    padding: 8px;
     text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background: rgba(0, 255, 240, 0.1);
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
 }
